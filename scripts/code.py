@@ -1,7 +1,7 @@
 import csv
 def readCSV():
-    file = open(r'C:\Users\blitz\OneDrive\Desktop\projectss\tasks\lab1\source.csv' , 'r')
-    file1 = open(r'C:\Users\blitz\OneDrive\Desktop\projectss\tasks\lab1\source2.csv' , 'w', newline="")
+    file = open('archive\source.csv' , 'r')
+    file1 = open('data\source2.csv' , 'w', newline="")
     csvreader = csv.reader(file)
     csvwriter = csv.writer(file1)
     csvwriter.writerow((["year","region","value"]))
